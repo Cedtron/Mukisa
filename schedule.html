@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="assets/css/-Login-form-Page-BS4--Login-form-Page-BS4.css">
     <link rel="stylesheet" href="assets/css/Event-Schedule.css">
     <link rel="stylesheet" href="assets/css/evo-calendar.min.css">
+    <link rel="stylesheet" href="assets/css/evo-calendar.royal-navy.min.css">
 </head>
 
 <body id="page-top">
@@ -154,7 +155,7 @@
         
         <div class="row">
            
-            <div id="calendar"></div>
+            <div id="evoCalendar"></div>
             
         </div>
         
@@ -179,11 +180,24 @@
     <script src="assets/js/bs-init.js"></script>
     <script src="assets/js/theme.js"></script>
     <script>
-    $(document).ready(function() {
+$(document).ready(function() {
     var myEvents = [
-        { id: 'delivery1', name: 'Delivery 1', date: '2024-04-25' },
-        { id: 'delivery2', name: 'Delivery 2', date: '2024-04-30' },
-        { id: 'delivery3', name: 'Delivery 3', date: '2024-05-05' }
+        {
+            id: 'bHay68s',
+            name: "New Year",
+            date: "2024-04-01",
+            type: "holiday",
+            description: "Mark pick up.",
+            everyYear: true
+        },
+        {
+            name: "Vacation Leave",
+            badge: "02/13 - 02/15",
+            date: ["2024-04-13", "2024-04-15"],
+            description: "Musa pick up.",
+            type: "event",
+            color: "#63d867"
+        }
     ];
 
     $('#evoCalendar').evoCalendar({
